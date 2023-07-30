@@ -1,0 +1,8 @@
+.wy-table-responsive table td {
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+.wy-table-responsive table td a {
+  overflow-wrap: normal;
+}
