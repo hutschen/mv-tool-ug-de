@@ -2,15 +2,12 @@
 Einleitung
 ##################
 
-Das MV-Tool ist ein spezialisiertes Werkzeug zur Steuerung und Nachverfolgung
-von Maßnahmen im Bereich der Informationssicherheit. Entwickelt, um die
-organisatorische Herausforderung der Erfüllung von Hunderten von
-Informationssicherheitsanforderungen zu bewältigen, bietet es eine zentrale,
-webbasierte Plattform für die Zuweisung und Koordination von Maßnahmen an
-diverse Rollen oder Personen innerhalb einer Organisation. Durch die Förderung
-simultaner Zusammenarbeit ermöglicht das MV-Tool ein effizientes Arbeiten und
-trägt so zu beschleunigten Fortschritten in der praktischen Umsetzung von
-Informationssicherheitsmaßnahmen bei.
+In diesem Abschnitt wird ein Überblick über die wichtigsten Funktionen des
+MV-Tools gegeben. Das MV-Tool ist eine leistungsstarke Webanwendung, die die
+Nachverfolgung und Verwaltung von Informationssicherheitsmaßnahmen erleichtert.
+Sie bietet Funktionen für Import und Export, die Bestimmung von Maßnahmen, die
+Dokumentation des Umsetzungsstands, das Filtern, Sortieren und Suchen sowie das
+Verwalten von Dokumenten.
 
 Import und -Export
 ==================
