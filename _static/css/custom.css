@@ -6,3 +6,11 @@
 .wy-table-responsive table td a {
   overflow-wrap: normal;
 }
+
+img.shadow {
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+.menuselection {
+  white-space: nowrap;
+}

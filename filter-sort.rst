@@ -1,3 +1,5 @@
+.. _sortieren:
+
 #####################
 Filtern und Sortieren
 #####################
@@ -8,6 +10,8 @@ Suche
 #####
 
 Suche nach Texten und Wildcards.
+
+.. _filtern:
 
 Filtern
 #######
