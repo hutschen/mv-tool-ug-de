@@ -37,7 +37,13 @@ der praktischen Umsetzung der Informationssicherheit.
     :caption: Funktionen
     
     overview
-    
+    projects
+    process
+    catalogs
+    filter-sort
+    table-view
+    import-export
+    collaboration
 
 .. toctree::
     :maxdepth: 1
