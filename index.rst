@@ -26,9 +26,8 @@ der praktischen Umsetzung der Informationssicherheit.
 
 .. toctree::
     :maxdepth: 1
-    :caption: Erste Schritte
+    :caption: Einrichtung
     
-    introduction
     prerequisites
     installation
 

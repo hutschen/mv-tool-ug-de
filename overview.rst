@@ -1,6 +1,6 @@
-##################
-Einleitung
-##################
+#########
+Überblick
+#########
 
 In diesem Abschnitt wird ein Überblick über die wichtigsten Funktionen des
 MV-Tools gegeben. Das MV-Tool ist eine leistungsstarke Webanwendung, die die
