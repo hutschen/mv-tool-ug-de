@@ -30,7 +30,7 @@ der praktischen Umsetzung der Informationssicherheit.
     
     prerequisites
     installation
-
+    update
 
 .. toctree::
     :maxdepth: 1
