@@ -1,3 +1,5 @@
+.. _projects:
+
 ########
 Projekte
 ########
@@ -37,7 +39,9 @@ können:
 Bestätigen Sie Ihre Eingaben mit dem Button :guilabel:`Save`. Anschließend wird
 neu angelegte Projekt in der Liste der Projekte angezeigt.
 
-Sie können die Daten Ihres Projekts jederzeit bearbeiten. Nutzen Sie dafür die :ref:`Eintrag-spezifischen Funktionen <eintrag-spezifische-funktionen>` des MV-Tools.
+Sie können die Daten Ihres Projekts jederzeit bearbeiten. Nutzen Sie dafür die
+:ref:`Eintrag-spezifischen Funktionen <eintrag-spezifische-funktionen>` des
+MV-Tools.
 
 Projekt auswählen
 #################
@@ -49,6 +53,10 @@ dafür auf den Eintrag des Projekts in der Tabelle aller Projekte.
 
 Anforderungen
 #############
+
+Um die Anforderungen eines Projekts anzuzeigen, klicken Sie in der Tabelle der
+Projekte auf den Eintrag des Projekts, dessen Anforderungen Sie anzeigen
+möchten. Stellen Sie anschließend sicher, dass in der Brotkrümelnavigation 
 
 .. _dokumente:
 

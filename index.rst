@@ -37,6 +37,7 @@ der praktischen Umsetzung der Informationssicherheit.
     :caption: Funktionen
     
     overview
+    navigation
     projects
     process
     catalogs
