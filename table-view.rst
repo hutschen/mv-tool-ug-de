@@ -128,6 +128,8 @@ Es öffnet sich ein Bestätigungsdialog zur Löschung. Klicken Sie auf
     können. Stellen Sie sicher, dass Sie die richtigen Einträge zur Löschung
     ausgewählt haben.
 
+.. _eintrag-spezifische-funktionen:
+
 Eintrag-spezifische Funktionen
 ##############################
 
