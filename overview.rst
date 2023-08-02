@@ -2,12 +2,20 @@
 Überblick
 #########
 
-In diesem Abschnitt wird ein Überblick über die wichtigsten Funktionen des
-MV-Tools gegeben. Das MV-Tool ist eine leistungsstarke Webanwendung, die die
+Das MV-Tool ist eine leistungsstarke Webanwendung, die die
 Nachverfolgung und Verwaltung von Informationssicherheitsmaßnahmen erleichtert.
 Sie bietet Funktionen für Import und Export, die Bestimmung von Maßnahmen, die
 Dokumentation des Umsetzungsstands, das Filtern, Sortieren und Suchen sowie das
 Verwalten von Dokumenten.
+
+.. image:: img/overview.png
+   :class: border
+   :scale: 50%
+   :align: center
+   :alt: Screenshot der Anforderungsansicht des MV-Tools
+
+-----------------
+
 
 Import und -Export
 ==================
