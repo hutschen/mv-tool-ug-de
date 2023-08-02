@@ -4,25 +4,25 @@
 Projekte
 ########
 
-Um mit dem MV-Tool zu arbeiten, müssen Sie zunächst ein Projekt anlegen. Ein
-Projekt enthält eine Sammlung von :ref:`Anforderungen <anforderungen>`, denen
-:ref:`Maßnahmen <massnahmen>` zugeordnet werden können. Ein Projekt kann auch
-:ref:`Dokumente <dokumente>` enthalten, denen Maßnahmen zugeordnet werden
-können.
+Bevor Sie mit dem MV-Tool arbeiten können, müssen Sie ein Projekt anlegen. Ein
+Projekt in diesem Kontext ist eine Sammlung von :ref:`Anforderungen
+<anforderungen>`, denen :ref:`Maßnahmen <massnahmen>` zugeordnet werden können.
+Darüber hinaus kann ein Projekt auch :ref:`Dokumente <dokumente>` enthalten, die
+ebenfalls Maßnahmen zugeordnet werden können.
 
-Um ein Projekt anzulegen, müssen Sie zunächst die Übersicht aller Projekte
-aufrufen. Klicken Sie dafür in der :ref:`navigation` auf den Button
-:guilabel:`Projects`. Es öffnet sich eine Tabelle mit allen Projekten. Wenn Sie
-noch kein Projekt angelegt haben, ist diese Tabelle leer.
+Zum Anlegen eines Projekts, navigieren Sie zuerst zur Übersichtsseite aller
+Projekte. Klicken Sie hierfür in der :ref:`navigation` auf den Button
+:guilabel:`Projects`. Es wird eine Tabelle aller Projekte angezeigt. Wenn Sie
+noch kein Projekt erstellt haben, ist diese Tabelle leer.
 
 .. _create_project:
 
 Projekte anlegen
 ################
 
-Klicken Sie auf den Button :guilabel:`Create Project` über der Tabelle aller
-Projekte. Nun öffnet sich ein Dialog, in dem Sie die Daten für das neue Projekt
-eingeben können:
+Um ein neues Projekt anzulegen, klicken Sie auf den Button :guilabel:`Create
+Project` oberhalb der Projekttabelle. Es öffnet sich ein Dialog, in dem Sie
+die Details für Ihr neues Projekt eingeben können:
 
 .. list-table::
    :header-rows: 1
@@ -31,49 +31,51 @@ eingeben können:
      - Beschreibung
      - Erforderlich
    * - :guilabel:`Name`
-     - Vergeben Sie einen aussagekräftigen Namen für Ihr Projekt.
+     - Geben Sie einen aussagekräftigen Namen für Ihr Projekt ein.
      - Ja
    * - :guilabel:`Description`
-     - Hier können Sie Ihr Projekt mit einem kurzen Text beschreiben.
+     - Beschreiben Sie kurz das Projekt und seine Ziele.
      - 
    * - :guilabel:`JIRA Project`
-     - Hier können Sie ein JIRA-Projekt auswählen, das mit Ihrem Projekt
-       verknüpft werden soll. Tickets, die das MV-Tool für Maßnahmen dieses
-       Projekts anlegt, werden dann in diesem JIRA-Projekt angelegt.
+     - Falls Ihr Projekt mit einem JIRA-Projekt verknüpft werden soll, können
+       Sie es hier auswählen. Eventuelle Tickets, die durch das MV-Tool für die
+       Maßnahmen dieses Projekts erstellt werden, werden dann in dem
+       ausgewählten JIRA-Projekt erstellt.
      - 
 
-Bestätigen Sie Ihre Eingaben mit dem Button :guilabel:`Save`. Anschließend wird
-neu angelegte Projekt in der Liste der Projekte angezeigt.
+Bestätigen Sie Ihre Eingaben durch Klicken auf den Button :guilabel:`Save`. Ihr
+neu erstelltes Projekt wird dann in der Projekttabelle angezeigt.
 
 .. note::
 
-    Sie können die Daten Ihres Projekts jederzeit bearbeiten. Nutzen Sie dafür
+    Sie können die Details Ihres Projekts jederzeit ändern. Verwenden Sie hierzu
     die :ref:`Eintrag-spezifischen Funktionen <eintrag-spezifische-funktionen>`
     des MV-Tools.
 
 Projekt öffnen
 ##############
 
-Um an einem Projekt zu arbeiten, müssen Sie es zunächst öffnen. Klicken Sie
-dafür einfacht auf den Eintrag des Projekts in der Tabelle aller Projekte.
+Um in einem bestimmten Projekt zu arbeiten, müssen Sie dieses öffnen. Klicken
+Sie dafür einfach auf den Namen des gewünschten Projekts in der Projekttabelle.
 
 .. _anforderungen:
 
 Anforderungen
 #############
 
-Um die Anforderungen eines Projekts anzuzeigen, klicken Sie in der Tabelle der
-Projekte auf den Eintrag des Projekts, dessen Anforderungen Sie anzeigen
-möchten. Stellen Sie anschließend sicher, dass als letzter Eintrag der
-:ref:`breadcrumbs` der Eintrag :guilabel:`Requirements` ausgewählt ist. Es wird
-eine Tabelle mit allen Anforderungen des Projekts angezeigt.
+Um die Anforderungen eines Projekts anzuzeigen, navigieren Sie zuerst zur
+:ref:`Projekttabelle <projects>`. Klicken Sie dann auf das Projekt, dessen
+Anforderungen Sie sehen möchten. Stellen Sie sicher, dass
+:guilabel:`Requirements` als letzter Eintrag in der 
+:ref:`Brotkrümel-Navigation <breadcrumbs>` ausgewählt ist. Daraufhin wird eine
+Tabelle mit allen Anforderungen des gewählten Projekts angezeigt.
 
 Anforderung anlegen
 ===================
 
-Klicken Sie auf den Button :guilabel:`Create Requirement` über der Tabelle aller
-Anforderungen. Nun öffnet sich ein Dialog, in dem Sie die Daten für die neue
-Anforderung eingeben können:
+Um eine neue Anforderung anzulegen, klicken Sie auf den Button 
+:guilabel:`Create Requirement` oberhalb der Anforderungstabelle. Es öffnet sich
+ein Dialogfeld, in dem Sie die Details für die neue Anforderung eingeben können:
 
 .. list-table::
    :header-rows: 1
@@ -82,42 +84,159 @@ Anforderung eingeben können:
      - Beschreibung
      - Erforderlich
    * - :guilabel:`Reference`
-     - Vergeben Sie eine eindeutige Referenz für Ihre Anforderung.
+     - Vergeben Sie eine eindeutige Kennung für Ihre Anforderung.
+     - 
    * - :guilabel:`Summary`
-     - Schreiben sie eine aussagekräftige Kurzzusammenfassung für Ihre
-       Anforderung. Diese kann ein Satz sein oder auch nur ein paar Stichworte.
+     - Verfassen Sie eine prägnante Zusammenfassung Ihrer Anforderung. Dies kann
+       ein Satz oder eine Liste von Stichworten sein.
      - Ja
    * - :guilabel:`Description`
-     - Hier können Sie den Inhalt Ihrer Anforderung ausführlich beschreiben, sofern 
-       dieser aus der Zusammenfassung nicht eindeutig hervorgeht.
+     - Beschreiben Sie hier ausführlich den Inhalt Ihrer Anforderung,
+       insbesondere dann, wenn er aus der Zusammenfassung nicht klar hervorgeht.
      - 
    * - :guilabel:`Milestone`
-     - Hier könnnen Sie einen Meilenstein definieren zu dem Sie die Anforderung
+     - Definieren Sie hier einen Meilenstein, zu dem Sie die Anforderung
        umgesetzt haben möchten.
      - 
    * - :guilabel:`Target object`
-     - Hier können Sie ein Zielobjekt auswählen, auf das sich die Anforderung
-       bezieht. I.d.R. ist dies eine bestimmte IT-Infrastruktur oder eine Gruppe
-       von IT-Infrastrukturen.
+     - Wählen Sie hier ein Zielobjekt aus, auf das sich die Anforderung bezieht.
+       In der Regel handelt es sich dabei um eine spezifische IT-Infrastruktur
+       oder eine Gruppe von IT-Infrastrukturen.
      - 
 
-Bestätigen Sie Ihre Eingaben mit dem Button :guilabel:`Save`. Anschließend wird
-die neu angelegte Anforderung in der Liste der Anforderungen angezeigt.
+Bestätigen Sie Ihre Eingaben durch Klicken auf den Button :guilabel:`Save`. Die
+neu erstellte Anforderung wird dann in der Übersichtsliste der Anforderungen
+angezeigt.
 
 .. note::
 
-    Sie können die Daten Ihrer Anforderung jederzeit bearbeiten. Nutzen Sie
-    dafür die :ref:`Eintrag-spezifischen Funktionen
-    <eintrag-spezifische-funktionen>` des MV-Tools. Außerdem können Sie den
-    :ref:`Erfüllungsgrad <compliance>` Ihrer Anforderung definieren.
-
+    Die Details einer Anforderung können jederzeit bearbeitet werden. Verwenden
+    Sie dazu die :ref:`Eintrag-spezifischen Funktionen
+    <eintrag-spezifische-funktionen>` des MV-Tools. Darüber hinaus können Sie
+    den :ref:`Erfüllungsgrad <compliance>` Ihrer Anforderung definieren.
 
 .. _dokumente:
 
 Dokumente
 #########
 
+Um die Dokumente eines Projekts anzuzeigen, navigieren Sie zur :ref:`Tabelle der
+Projekte <projects>` und klicken auf das entsprechende Projekt. Stellen Sie
+sicher, dass in der :ref:`breadcrumbs` :guilabel:`Documents` ausgewählt
+ist. Falls dies nicht der Fall ist, klicken Sie auf den letzten Eintrag in der
+:ref:`breadcrumbs` Leiste und wählen aus dem Dropdown-Menü
+:guilabel:`Documents`. Anschließend wird eine Tabelle mit allen Dokumenten des
+ausgewählten Projekts dargestellt.
+
+Dokument anlegen
+================
+
+Um ein neues Dokument anzulegen, klicken Sie auf den Button 
+:guilabel:`Create Document` oberhalb der Dokumententabelle. Ein Dialog öffnet
+sich, in dem Sie die Details für das neue Dokument eingeben können:
+
+.. list-table::
+   :header-rows: 1
+
+   * - 
+     - Beschreibung
+     - Erforderlich
+   * - :guilabel:`Reference`
+     - Vergeben Sie eine eindeutige Kennung für Ihr Dokument (z.B. eine
+       Dokumentennummer).
+     - 
+   * - :guilabel:`Titel`
+     - Geben Sie einen aussagekräftigen Titel für Ihr Dokument an.
+     - Ja
+   * - :guilabel:`Description`
+     - Beschreiben Sie hier Ihr Dokument kurz und prägnant.
+     - 
+
+Bestätigen Sie Ihre Eingaben durch Klicken auf den Button :guilabel:`Save`. Das
+neu erstellte Dokument wird dann in der Dokumententabelle der Dokumente
+angezeigt.
+
+.. note::
+
+    Sie können die Informationen eines Dokuments jederzeit bearbeiten. Verwenden
+    Sie dazu die :ref:`Eintrag-spezifischen Funktionen
+    <eintrag-spezifische-funktionen>` des MV-Tools.
+
 .. _massnahmen:
 
 Maßnahmen
 #########
+
+Sie können die Maßnahmen eines Projekts auf zwei Arten anzeigen:
+
+* Navigieren Sie zur :ref:`Tabelle der Projekte <projects>` und klicken Sie auf
+  das betreffende Projekt. Stellen Sie sicher, dass in der :ref:`breadcrumbs`
+  :guilabel:`Measures` ausgewählt ist. Daraufhin wird eine Tabelle mit allen
+  Maßnahmen des Projekts dargestellt.
+* Alternativ können Sie in der :ref:`Tabelle der Anforderungen <anforderungen>`
+  auf die spezifische Anforderung klicken, für die Sie die Maßnahmen anzeigen
+  möchten. Sie erhalten dann eine Übersicht aller mit dieser Anforderung
+  verknüpften Maßnahmen.
+
+Maßnahme anlegen
+================
+
+Um eine neue Maßnahme zu erstellen, klicken Sie auf den Button 
+:guilabel:`Create Measure` oberhalb der Maßnahmentabelle. Ein Dialog öffnet
+sich, in dem Sie die Details für die neue Maßnahme eingeben können:
+
+.. list-table::
+   :header-rows: 1
+
+   * - 
+     - Beschreibung
+     - Erforderlich
+   * - :guilabel:`Reference`
+     - Vergeben Sie eine eindeutige Kennung für Ihre Maßnahme.
+     - 
+   * - :guilabel:`Summary`
+     - Geben Sie eine prägnante Zusammenfassung für Ihre Maßnahme an. Dies
+       könnte ein vollständiger Satz oder nur einige Schlüsselwörter sein.
+     - Ja
+   * - :guilabel:`Description`
+     - Hier können Sie weitere Details zu Ihrer Maßnahme eingeben, falls diese
+       aus der Zusammenfassung nicht klar ersichtlich sind.
+     - 
+   * - :guilabel:`Document`
+     - Wenn vorhanden, wählen Sie ein Dokument aus, das mit der Maßnahme
+       verknüpft werden soll. Dies beinhaltet gewöhnlich Details, wie die
+       Maßnahme im ausgewählten Dokument beschrieben oder dokumentiert ist.
+     - 
+
+Bestätigen Sie Ihre Eingaben mit dem Button :guilabel:`Save`. Die neu erstellte
+Maßnahme wird dann in der Maßnahmentabelle angezeigt.
+
+-----------------
+
+.. image:: img/quick-input.png
+    :class: border space
+    :scale: 50 %
+    :align: center
+    :alt: Beispiel der Schnell-Eingabe zum Anlegen von Maßnahmen
+
+Alternativ können Sie eine Maßnahme über die Schnell-Eingabe erstellen, die als
+letzter Eintrag in der Maßnahmentabelle angezeigt wird. Geben Sie einfach die
+Zusammenfassung der Maßnahme in das Eingabefeld ein und bestätigen Sie Ihre
+Eingabe mit der :kbd:`Enter`-Taste oder durch Klicken auf den Button
+:guilabel:`Create`.
+
+.. note::
+
+    Die Details einer Maßnahme können jederzeit bearbeitet werden. Verwenden Sie
+    dafür die :ref:`Eintrag-spezifischen Funktionen
+    <eintrag-spezifische-funktionen>` des MV-Tools. Darüber hinaus können Sie
+    den :ref:`Erfüllungsgrad <compliance>`, :ref:`Umsetzungsstand <umsetzung>`
+    und den :ref:`Überprüfungsstatus <verification>` Ihrer Maßnahme festlegen
+    oder ein :ref:`Jira-Ticket <jira_issues>` zu Ihrer Maßnahme erstellen.
+
+.. hint::
+
+    Bitte beachten Sie, dass neue Maßnahmen nur zu einer bestehenden Anforderung
+    angelegt werden können. Aus diesem Grund ist der Button
+    :guilabel:`Create Measure` in der Maßnahmentabelle auf Projektebene nicht
+    vorhanden.

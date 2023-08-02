@@ -117,7 +117,7 @@ Spalten mit begrenzten Wertemengen können nach diesen Werten gefiltert werden.
 Geben Sie die Werte in das Eingabefeld ein und eine Liste mit passenden
 Vorschlägen erscheint. Mit der Maus oder den Pfeiltasten :kbd:`↑` :kbd:`↓`
 können Sie einen Wert auswählen. Bestätigen Sie Ihre Auswahl mit einem Klick
-oder der :kbd:`Return`-Taste.
+oder der :kbd:`Enter`-Taste.
 
 Wenn Sie mehrere Werte auswählen, zeigt die Tabelle nur die Einträge, die einen
 der ausgewählten Werte enthalten.
