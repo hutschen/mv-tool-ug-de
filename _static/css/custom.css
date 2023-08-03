@@ -21,6 +21,10 @@ img.space {
   padding: 11px;
 }
 
+img.align-center {
+  margin-bottom: 24px !important;
+}
+
 .menuselection,
 .guilabel {
   white-space: nowrap;

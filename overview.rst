@@ -14,9 +14,6 @@ Verwalten von Dokumenten.
    :align: center
    :alt: Screenshot der Anforderungsansicht des MV-Tools
 
------------------
-
-
 Import und -Export
 ==================
 
