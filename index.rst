@@ -52,7 +52,17 @@ der praktischen Umsetzung der Informationssicherheit.
     
     changelog 
 
-######
+
+Support
+#######
+
+Bei Fragen, Problemen oder Verbesserungsvorschlägen erstellen Sie bitte ein
+`Ticket auf GitHub <https://github.com/hutschen/mv-tool-ng/issues>`_. Bitte
+beachten Sie, dass Tickets idealerweise in englischer Sprache verfasst werden
+sollten. Wenn Sie jedoch lieber auf Deutsch kommunizieren möchten oder keinen
+GitHub-Account haben, wenden Sie sich bitte direkt an `Helmar Hutschenreuter
+<https://hutschen.com/>`_.
+
 Lizenz
 ######
 
