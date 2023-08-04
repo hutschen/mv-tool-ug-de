@@ -104,9 +104,10 @@ vorhanden ist.
 .. admonition:: Info
 
     Das MV-Tool verwendet SQLAlchemy für die Datenbankverbindung. Daher muss die
-    Datenbank-URL dem SQLAlchemy-Format entsprechen. Zusätzliche Informationen
-    zur SQLite-Datenbank-URL finden Sie in der `SQLAlchemy Dokumentation
-    <https://docs.sqlalchemy.org/en/14/dialects/sqlite.html#connect-strings>`_.
+    Datenbank-URL dem SQLAlchemy-Format entsprechen. Zusätzliche `Informationen
+    zur SQLite-Datenbank-URL
+    <https://docs.sqlalchemy.org/en/14/dialects/sqlite.html#connect-strings>`_
+    finden Sie in der SQLAlchemy Dokumentation.
 
 PostgreSQL
 ----------
@@ -122,9 +123,10 @@ PostgreSQL-Datenbank hergestellt wird:
 .. admonition:: Info
 
     Für Verbindungen zu PostgreSQL-Datenbanken wird der Treiber `psycopg2
-    <https://www.psycopg.org/>`_ verwendet. Zusätzliche Informationen zur
-    PostgreSQL-Datenbank-URL finden Sie in der `SQLAlchemy Dokumentation
-    <https://docs.sqlalchemy.org/en/14/dialects/postgresql.html#dialect-postgresql-psycopg2-connect>`_.
+    <https://www.psycopg.org/>`_ verwendet. Zusätzliche `Informationen zur
+    PostgreSQL-Datenbank-URL
+    <https://docs.sqlalchemy.org/en/14/dialects/postgresql.html#dialect-postgresql-psycopg2-connect>`_
+    finden Sie in der SQLAlchemy Dokumentation.
 
 Logging
 =======

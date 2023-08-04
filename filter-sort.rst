@@ -51,6 +51,8 @@ die gefilterten Einträge.
     beliebig viele Zeichen, während ein Fragezeichen ``?`` ein einzelnes Zeichen
     repräsentiert.
 
+.. _filtern:
+
 Filtern
 #######
 

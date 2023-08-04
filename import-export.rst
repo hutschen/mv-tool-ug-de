@@ -301,7 +301,7 @@ nachfolgend aufgelistet.
      - Wenn dieses Feld leer gelassen wird, wird ein neuer Katalog im
        MV-Tool angelegt. Andernfalls wird der Katalog mit der angegebenen ID
        aktualisiert. Die IDs der Kataloge erhalten Sie, wenn Sie diese aus dem
-        MV-Tool exportieren.
+       MV-Tool exportieren.
      - 
    * - :guilabel:`Catalog Reference`
      - Ein Verweis oder eine Kennung für den Katalog.
@@ -338,7 +338,7 @@ MV-Tool für den Import von Moduldaten erwartet, sind nachfolgend aufgelistet.
      - Wenn dieses Feld leer gelassen wird, wird ein neues Modul im
        MV-Tool angelegt. Andernfalls wird das Modul mit der angegebenen ID
        aktualisiert. Die IDs der Module erhalten Sie, wenn Sie diese aus dem
-        MV-Tool exportieren.
+       MV-Tool exportieren.
      - 
    * - :guilabel:`Catalog Module Reference`
      - Ein Verweis oder eine Kennung für das Modul.

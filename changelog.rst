@@ -3,11 +3,10 @@ Changelog
 ==========
 
 Version 0.11.1
-=============
+==============
 
-Veröffentlicht am 28.07.2023. Bestehend aus 
-Server Version `0.11.1 <https://github.com/hutschen/mv-tool-api/releases/tag/0.11.1>`_ und 
-Client Version `0.11.0 <https://github.com/hutschen/mv-tool-ng/releases/tag/0.11.0>`_.
+Veröffentlicht am 28.07.2023. Bestehend aus `Server Version 0.11.1`_ und 
+`Client Version 0.11.0`_.
 
 .. list-table::
    :header-rows: 1
@@ -25,9 +24,8 @@ Client Version `0.11.0 <https://github.com/hutschen/mv-tool-ng/releases/tag/0.11
 Version 0.11.0
 ==============
 
-Veröffentlicht am 26.07.2023. Bestehend aus 
-Server Version `0.11.0 <https://github.com/hutschen/mv-tool-api/releases/tag/0.11.0>`_ und 
-Client Version `0.11.0 <https://github.com/hutschen/mv-tool-ng/releases/tag/0.11.0>`_.
+Veröffentlicht am 26.07.2023. Bestehend aus `Server Version 0.11.0`_ und 
+`Client Version 0.11.0`_.
 
 .. list-table::
    :header-rows: 1
@@ -62,3 +60,7 @@ Das Changelog für frühere Versionen kann auf GitHub eingesehen werden. Dies gi
 sowohl für den `Server <https://github.com/hutschen/mv-tool-api/releases>`_ als
 auch für den `Client <https://github.com/hutschen/mv-tool-ng/releases>`_ des
 MV-Tools.
+
+.. _Server Version 0.11.1: https://github.com/hutschen/mv-tool-api/releases/tag/0.11.1
+.. _Server Version 0.11.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.11.0
+.. _Client Version 0.11.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.11.0

@@ -124,14 +124,14 @@ folgenden Eingabefeldern:
    * - :guilabel:`Summary`
      - Geben Sie hier eine kurze Zusammenfassung des JIRA-Tickets an.
        Diese wird in JIRA als Titel des Tickets verwendet. Dieses Feld ist
-       bereits mit der Zusammenfassung Ihrer :ref:`Maßnahme <maßnahmen>`
+       bereits mit der Zusammenfassung Ihrer :ref:`Maßnahme <massnahmen>`
        vorausgefüllt, kann aber angepasst werden.
      - Ja
-     - :guilabel:`Description`
+   * - :guilabel:`Description`
      - Geben Sie hier eine ausführliche Beschreibung des JIRA-Tickets
        an. Diese wird in JIRA als Beschreibung des Tickets verwendet.
        Dieses Feld ist bereits mit der Beschreibung Ihrer :ref:`Maßnahme
-       <maßnahmen>` vorausgefüllt, kann aber nach Belieben angepasst werden.
+       <massnahmen>` vorausgefüllt, kann aber nach Belieben angepasst werden.
      -
 
 Bestätigen Sie Ihre Eingaben mit dem Button :guilabel:`Create`. Anschließend

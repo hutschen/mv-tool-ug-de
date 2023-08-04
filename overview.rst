@@ -41,7 +41,7 @@ spezifischen Anforderungen der Organisation oder des Projekts und trägt zur
 effektiven Umsetzung bei.
 
 Dokumentation des Umsetzungsstands
-=================================
+==================================
 
 .. TODO: Screenshot einfügen! Quadratisch, linksbündig
 

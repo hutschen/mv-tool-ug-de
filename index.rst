@@ -60,13 +60,12 @@ Bei Fragen, Problemen oder Verbesserungsvorschlägen erstellen Sie bitte ein
 `Ticket auf GitHub <https://github.com/hutschen/mv-tool-ng/issues>`_. Bitte
 beachten Sie, dass Tickets idealerweise in englischer Sprache verfasst werden
 sollten. Wenn Sie jedoch lieber auf Deutsch kommunizieren möchten oder keinen
-GitHub-Account haben, wenden Sie sich bitte direkt an `Helmar Hutschenreuter
-<https://hutschen.com/>`_.
+GitHub-Account haben, wenden Sie sich bitte direkt an `Helmar Hutschenreuter`_.
 
 Lizenz
 ######
 
-Das MV-Tool wird von `Helmar Hutschenreuter <https://hutschen.com>`_ entwickelt.
+Das MV-Tool wird von `Helmar Hutschenreuter`_ entwickelt.
 Als Open-Source-Software ermöglicht es auch die kostenfreie Nutzung und erlaubt
 zudem den Zugang zum Quellcode.
 
@@ -79,3 +78,5 @@ veröffentlicht.
 Abgesehen davon ist diese Dokumentation unter der `CC-BY-SA 4.0
 <https://github.com/hutschen/mv-tool-ug-de/blob/main/LICENSE>`_ Lizenz
 veröffentlicht.
+
+.. _Helmar Hutschenreuter: https://hutschen.com

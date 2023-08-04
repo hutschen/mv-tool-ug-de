@@ -162,6 +162,8 @@ den Eintrag zu löschen.
     Gelöschte Einträge können nicht wiederhergestellt werden. Stellen Sie
     sicher, dass Sie den richtigen Eintrag zum Löschen ausgewählt haben.
 
+.. _markieren:
+
 Eintrag markieren
 =================
 
