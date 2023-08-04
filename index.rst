@@ -65,9 +65,9 @@ GitHub-Account haben, wenden Sie sich bitte direkt an `Helmar Hutschenreuter`_.
 Lizenz
 ######
 
-Das MV-Tool wird von `Helmar Hutschenreuter`_ entwickelt.
-Als Open-Source-Software ermöglicht es auch die kostenfreie Nutzung und erlaubt
-zudem den Zugang zum Quellcode.
+Das MV-Tool wird von `Helmar Hutschenreuter`_ entwickelt. Als
+Open-Source-Software ermöglicht es den Zugang zum Quellcode und erlaubt zudem
+die kostenfreie Nutzung.
 
 Das MV-Tool besteht aus dem `Server <https://github.com/hutschen/mv-tool-api>`_
 und dem `Client <https://github.com/hutschen/mv-tool-ng>`_. Beide

@@ -23,7 +23,7 @@ aktiv.
 
 .. note::
 
-   Das MV-Tool wird JIRA Version 9 getestet. Das MV-Tool verwendet `jira-python
+   Das MV-Tool wird mit JIRA Version 9 getestet. Das MV-Tool verwendet `jira-python
    <https://jira.readthedocs.io/>`_ für den Zugriff auf JIRA. Eine
    Kompatibilität mit früheren JIRA Versionen kann daher gegeben sein.
 
@@ -46,7 +46,7 @@ d.h. im Browser des Benutzers verwaltet.
     Zugriffstoken verwenden. Dieses Token müssen Sie zuvor in Ihrem
     JIRA-Benutzerprofil generieren. Weitere Informationen finden Sie in der
     `JIRA Dokumentation
-    <https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/>`_
+    <https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/>`_.
 
 Datenbank
 =========
