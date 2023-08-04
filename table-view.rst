@@ -35,7 +35,7 @@ Folgen Sie diesen Schritten, um mehrere Einträge gleichzeitig zu bearbeiten:
    Einträge gelöscht.
 3. Klicken Sie auf den Button :guilabel:`OK`, um die Änderungen zu speichern.
 
-.. admonition:: Info
+.. hint::
 
     Bitte beachten Sie, dass einige Datenfelder nur in Kombination mit anderen
     zugehörigen Datenfeldern bearbeitet werden können. Dies erkennen Sie daran,
@@ -57,7 +57,7 @@ Wenn Sie nur bestimmte Einträge bearbeiten möchten, können Sie diese
 :ref:`markieren <markieren>`. In diesem Fall werden nur die markierten Einträge
 bearbeitet und die Option ändert sich in  :menuselection:`⋮ --> Edit marked`.
 
-.. admonition:: Info
+.. note::
 
     Wenn Sie sowohl einen Filter als auch Markierungen gesetzt haben, werden nur
     die Einträge bearbeitet, die sowohl dem Filter als auch der Markierung
@@ -103,7 +103,7 @@ Mit der Option :menuselection:`⋮ --> Clear markers` können Sie alle Markierun
 aufheben, die Sie in der Tabelle gesetzt haben. Diese Option ist nur aktiv, wenn
 mindestens ein Eintrag markiert ist.
 
-.. admonition:: Info
+.. hint::
 
     Falls sich Filter und Markierungen überschneiden, kann es vorkommen, dass
     markierte Einträge nicht sichtbar sind, obwohl sie vorhanden sind. Dies
@@ -136,7 +136,7 @@ Eintrag-spezifische Funktionen
 Jeder Tabelleneintrag verfügt über verschiedene Funktionen, die Sie durch
 Anklicken des :guilabel:`⋮` Buttons am Ende jeder Zeile aufrufen können.
 
-.. admonition:: Info
+.. note::
 
     Abhängig vom Typ des Eintrags können im Menü zusätzliche Optionen zur
     Verfügung stehen, die sich auf den Prozess der Maßnahmenverfolgung beziehen,
@@ -175,7 +175,7 @@ für jeden Eintrag einzeln setzen.
 Ist ein Eintrag markiert, ändert sich die Option zu :menuselection:`⋮ -->
 Unmark`, über die Sie die Markierung wieder aufheben können.
 
-.. admonition:: Info
+.. warning::
 
     Beachten Sie, dass Markierungen nicht serverseitig gespeichert, sondern
     lediglich in der URL kodiert sind. Beim Schließen des Browserfensters können

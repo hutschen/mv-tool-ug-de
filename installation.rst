@@ -53,7 +53,7 @@ minimale Konfiguration können Sie den folgenden Inhalt in eine Datei namens
     database:
       url: sqlite:///mvtool.db
 
-.. admonition:: Info
+.. note::
 
     Ersetzen Sie bitte ``http://localhost:2990/jira`` durch die URL Ihrer
     JIRA-Instanz.
@@ -64,7 +64,7 @@ Verbindung zu JIRA herstellen
 Um eine Verbindung zu JIRA herzustellen, geben Sie die URL Ihrer JIRA-Instanz in
 der Datei ``config.yml`` ein.
 
-.. admonition:: Info
+.. note::
 
     Es kann nötig sein, ``/jira`` an das Ende der URL anzuhängen. Falls Probleme
     bei der initialen Verbindung auftreten, versuchen Sie es mit dem Anhängen
@@ -101,7 +101,7 @@ hergestellt wird:
 Die Datenbankdatei ``mvtool.db`` wird automatisch erstellt, wenn sie nicht
 vorhanden ist.
 
-.. admonition:: Info
+.. seealso::
 
     Das MV-Tool verwendet SQLAlchemy für die Datenbankverbindung. Daher muss die
     Datenbank-URL dem SQLAlchemy-Format entsprechen. Zusätzliche `Informationen
@@ -120,7 +120,7 @@ PostgreSQL-Datenbank hergestellt wird:
     database:
       url: postgresql+psycopg2://user:password@localhost:5432/mvtool
 
-.. admonition:: Info
+.. seealso::
 
     Für Verbindungen zu PostgreSQL-Datenbanken wird der Treiber `psycopg2
     <https://www.psycopg.org/>`_ verwendet. Zusätzliche `Informationen zur
@@ -131,7 +131,7 @@ PostgreSQL-Datenbank hergestellt wird:
 Logging
 =======
 
-.. admonition:: Info
+.. note::
 
     Die Logging-Konfiguration ist optional. Wenn Sie keine Logging-Konfiguration
     benötigen, können Sie diesen Abschnitt überspringen oder direkt zum
@@ -192,7 +192,7 @@ und dass der Docker-Container Schreibrechte auf die Datei hat.
 Secret für Authentifizierungs-Token
 ===================================
 
-.. admonition:: Info
+.. note::
 
     Die Definition eines eigenen Secrets ist optional. Wenn Sie dies nicht
     wünschen, können Sie diesen Abschnitt überspringen oder direkt zum Abschnitt

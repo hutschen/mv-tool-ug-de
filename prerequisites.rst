@@ -21,7 +21,7 @@ Sie benötigen daher eine JIRA Instanz mit aktivierter JSON API, auf welche das
 MV-Tool per HTTP/HTTPS zugreifen kann. Die JSON API ist in JIRA standardmäßig
 aktiv.
 
-.. admonition:: Info
+.. note::
 
    Das MV-Tool wird JIRA Version 9 getestet. Das MV-Tool verwendet `jira-python
    <https://jira.readthedocs.io/>`_ für den Zugriff auf JIRA. Eine
@@ -38,7 +38,7 @@ d.h. im Browser des Benutzers verwaltet.
 
 .. TODO: Auf eigener Seite die Sicherheit der Benutzerauthentifizierung erläutern und hier verlinken.
 
-.. admonition:: Info
+.. hint::
 
     Wenn Sie JIRA als Cloud-Service von Atlassian nutzen, können Sie HTTP Basic
     Auth nur eingeschränkt verwenden. Benutzer können sich dann am MV-Tool nicht
@@ -72,6 +72,6 @@ zu nutzen, müssen Sie eine PostgreSQL-Datenbank auf Ihrem Server installieren
 und bereitstellen. Anweisungen zur Installation von PostgreSQL finden Sie auf
 der `Website von PostgreSQL <https://www.postgresql.org/download/>`_.
 
-.. admonition:: Info
+.. note::
 
    Das MV-Tool wird mit PostgreSQL Version 14 und 15 getestet.
