@@ -4,13 +4,37 @@
 Anforderungskataloge
 ####################
 
+Mit Hilfe von Anforderungskatalogen können Sie Anforderungen aus Standards und
+Richtlinien zentral im MV-Tool verwalten und in verschiedenen Projekten
+wiederverwenden. Die Anforderungskataloge sind hierarchisch aufgebaut. Die
+oberste Ebene repräsentiert die Anforderungskataloge selbst. Diese enthalten
+wiederum :ref:`Katalogmodule <modules>`, die ihrerseits
+:ref:`Kataloganforderungen <requirements>` enthalten.
+
 Um zu den Anforderungskatalogen zu gelangen, navigieren Sie über die
 :ref:`navigation` zum Button :guilabel:`Catalogs`. Die Anforderungskataloge
-werden nun in einer Tabelle dargestellt. 
+werden nun in einer Tabelle dargestellt.
 
-Anforderungskataloge stellen eine zentrale Sammlung von Anforderungen aus
-verschiedenen Richtlinien und Standards dar, die in verschiedenen Projekten
-innerhalb des MV-Tools wiederverwendet werden können.
+.. admonition:: Beispiel
+  :class: note
+
+  Ein typischer Anwendungsfall für Anforderungskataloge ist die Verwaltung der
+  Anforderungen aus dem `IT-Grundschutz des BSI
+  <https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/it-grundschutz_node.html>`_.
+  Hierfür legen Sie zunächst einen :ref:`Anforderungskatalog <create_catalog>`
+  an und nennen diesen zum Beispiel "IT-Grundschutz".
+
+  Anschließend legen Sie für jeden Baustein des IT-Grundschutzes ein 
+  :ref:`Modul <create_module>` im Anforderungskatalog an. Die Anforderungen aus
+  den Bausteinen können Sie dann als :ref:`Kataloganforderungen <create_requirement>`
+  in den Modulen anlegen.
+
+  Die Anforderungen aus dem IT-Grundschutz müssen Sie nicht manuell übertragen,
+  sondern können diese über die :ref:`Importfunktion <gs_import>` in den
+  Anforderungskatalog importieren. Das Modul wird in diesem Fall automatisch
+  angelegt.
+
+.. _create_catalog:
 
 Katalog anlegen
 ###############
@@ -56,6 +80,8 @@ Katalogmodule sind eine Unterkategorie von Anforderungskatalogen. Sie
 ermöglichen eine strukturierte Darstellung und effiziente Verwaltung der
 Anforderungen innerhalb eines Katalogs.
 
+.. _create_module:
+
 Modul anlegen
 =============
 
@@ -97,6 +123,8 @@ zugehörigen Kataloganforderungen in einer neuen Tabelle anzuzeigen.
 
 Kataloganforderungen sind den Katalogmodulen untergeordnet und repräsentieren
 die tatsächlichen Anforderungen aus den Standards.
+
+.. _create_requirement:
 
 Anforderung anlegen
 ===================
