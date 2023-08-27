@@ -2,6 +2,60 @@
 Changelog
 ==========
 
+Version 0.12.0
+==============
+
+Veröffentlicht am 27.08.2023. Bestehend aus `Server Version 0.12.0`_ und 
+`Client Version 0.12.0`_. .
+
+.. list-table::
+   :header-rows: 1
+
+   * - Typ
+     - Part
+     - Beschreibung
+     - Issue
+   * - Enhancement
+     - Server, Client
+     - Wenn der :ref:`Erfüllungsgrad <compliance>` einer Anforderung nicht mit
+       dem Erfüllungsgrad der zugehörigen Maßnahmen übereinstimmt, wird in der
+       UI ein Hinweis angezeigt. Das Filtern und Sortieren nach diesen Hinweisen
+       ist nun möglich.
+     - `#153 <https://github.com/hutschen/mv-tool-api/issues/153>`_,
+       `#112 <https://github.com/hutschen/mv-tool-ng/issues/112>`_
+   * - Enhancement
+     - Server, Client
+     - Der Web-API-Endpunkt zur Abfrage von JIRA-Tickets wurde überarbeitet, um
+       Tickets paginiert und gefiltert abfragen zu können. In der UI wurde
+       Auswahldialog für JIRA-Tickets überarbeitet, so dass nur Tickets vom
+       Server abgefragt werden, die als Vorschlag zur Auswahl angezeigt werden
+       sollen.
+     - `#154 <https://github.com/hutschen/mv-tool-api/issues/154>`_,
+       `#113 <https://github.com/hutschen/mv-tool-ng/issues/113>`_,
+   * - Bugfix
+     - Server
+     - Behebt einen Fehler bei der Behandlung von JIRA-Fehlern.
+     - `#155 <https://github.com/hutschen/mv-tool-api/issues/155>`_
+   * - Enhancement
+     - Client
+     - Es wurden die Funktionen zur Auswahl und Bearbeitung von JIRA-Tickets
+       überarbeitet, die Maßnahmen zugeordnet sind überarbeitet.
+     - `#114 <https://github.com/hutschen/mv-tool-ng/issues/114>`_
+   * - Enhancement
+     - Client
+     - Änderungen, die am Erfüllungsgrad, am Umsetzungsstatus, der
+       Überprüfungsmethode oder dem Überprüfungsstatus einer Maßnahme
+       vorgenommen werden, werden nun effizienter per `PATCH`-Request an den
+       Server gesendet.
+     - `#116 <https://github.com/hutschen/mv-tool-ng/issues/116>`_,
+   * - Enhancement
+     - Server, Client
+     - Referenzen von Anforderungen, Maßnahmen, Dokumenten, Katalogmodulen und
+       Kataloganforderungen können nun 
+       :ref:`automatisch nummeriert <bulk_edit_numbering>` werden.
+     - `#117 <https://github.com/hutschen/mv-tool-ng/issues/117>`_,
+       `#156 <https://github.com/hutschen/mv-tool-api/issues/156>`_
+
 Version 0.11.1
 ==============
 
@@ -61,6 +115,8 @@ sowohl für den `Server <https://github.com/hutschen/mv-tool-api/releases>`_ als
 auch für den `Client <https://github.com/hutschen/mv-tool-ng/releases>`_ des
 MV-Tools.
 
+.. _Server Version 0.12.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.12.0
 .. _Server Version 0.11.1: https://github.com/hutschen/mv-tool-api/releases/tag/0.11.1
 .. _Server Version 0.11.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.11.0
+.. _Client Version 0.12.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.12.0
 .. _Client Version 0.11.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.11.0

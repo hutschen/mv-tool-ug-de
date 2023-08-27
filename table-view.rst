@@ -12,6 +12,8 @@ In der oberen rechten Ecke jeder Tabelle befindet sich ein Button :guilabel:`⋮
 Wenn Sie auf diesen Button klicken, öffnet sich ein Menü mit Funktionen, die
 sich auf die gesamte Tabelle und ihre Einträge beziehen.
 
+.. _bulk_edit:
+
 Mehrfachbearbeitung
 ===================
 
@@ -63,7 +65,58 @@ bearbeitet und die Option ändert sich in  :menuselection:`⋮ --> Edit marked`.
     die Einträge bearbeitet, die sowohl dem Filter als auch der Markierung
     entsprechen.
 
+.. _bulk_edit_numbering:
 
+Automatisches Nummerieren
+-------------------------
+
+.. image:: img/number-automatically.png
+    :class: border space
+    :scale: 50 %
+    :align: right
+    :alt: Eingabefelder für die automatische Nummerierung
+
+Innerhalb des Dialogs zur :ref:`Mehrfachbearbeitung <bulk_edit>` haben Sie bei
+manchen Datenfeldern die Möglichkeit, die Einträge automatisch zu nummerieren.
+Das erkennen Sie daran, dass unter dem jeweiligen Datenfeld ein Schalter mit der
+Aufschrift :guilabel:`Number automatically` zu finden ist.
+
+Wenn Sie diesen Schalter aktivieren, werden folgende Eingabefelder angezeigt,
+die Ihnen die Möglichkeit geben, die Nummerierung zu konfigurieren:
+
+.. list-table::
+   :header-rows: 1
+
+   * - 
+     - Beschreibung
+     - Erforderlich
+   * - :guilabel:`Start`
+     - Die Nummer, mit der die Nummerierung beginnen soll. Diese muss größer als
+       0 sein.
+     - Ja
+   * - :guilabel:`Step`
+     - Die Schrittweite, mit der die Nummerierung fortgesetzt werden soll. Diese
+       muss größer als 0 sein. Wenn Sie die Schrittweite auf 1 setzen, wird
+       die Nummerierung fortlaufend durchgeführt. Wenn Sie zum Beispiel die
+       Schrittweite auf 10 setzen, werden die Einträge in 10er-Schritten
+       nummeriert.
+     - Ja
+   * - :guilabel:`Prefix`
+     - Ein optionaler Präfix, der vor die Nummer gesetzt wird. Wenn Sie zum
+       Beispiel den Präfix auf ``MV-`` setzen, werden die Einträge mit
+       ``MV-1``, ``MV-2``, ``MV-3`` usw. nummeriert.
+     - 
+   * - :guilabel:`Suffix`
+     - Ein optionaler Suffix, der nach der Nummer gesetzt wird. Wenn Sie zum
+       Beispiel den Suffix auf ``-MV`` setzen, werden die Einträge mit
+       ``1-MV``, ``2-MV``, ``3-MV`` usw. nummeriert.
+     -
+
+.. note::
+
+    Die Nummerierung folgt der Reihenfolge, in der die Einträge ursprünglich
+    angelegt wurden.
+    
 Spalten ausblenden
 ==================
 
