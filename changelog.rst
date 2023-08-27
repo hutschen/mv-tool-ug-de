@@ -2,11 +2,32 @@
 Changelog
 ==========
 
+Version 0.13.0
+==============
+
+Veröffentlicht am 10.09.2023. Bestehend aus `Server Version 0.13.0`_ und 
+`Client Version 0.13.0`_.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Typ
+     - Part
+     - Beschreibung
+     - Issue
+   * - Enhancement
+     - Server, Client
+     - :ref:`Import <excel_csv_import>` und :ref:`Export <excel_csv_export>` von
+       Projekten, Anforderungen, Maßnahmen, Dokumenten, Katalogen,
+       Katalogmodulen und Kataloganforderungen im CSV-Format.
+     - `#142 <https://github.com/hutschen/mv-tool-api/issues/142>`_,
+       `#119 <https://github.com/hutschen/mv-tool-ng/issues/119>`_,
+
 Version 0.12.0
 ==============
 
 Veröffentlicht am 27.08.2023. Bestehend aus `Server Version 0.12.0`_ und 
-`Client Version 0.12.0`_. .
+`Client Version 0.12.0`_.
 
 .. list-table::
    :header-rows: 1
@@ -115,8 +136,10 @@ sowohl für den `Server <https://github.com/hutschen/mv-tool-api/releases>`_ als
 auch für den `Client <https://github.com/hutschen/mv-tool-ng/releases>`_ des
 MV-Tools.
 
+.. _Server Version 0.13.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.13.0
 .. _Server Version 0.12.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.12.0
 .. _Server Version 0.11.1: https://github.com/hutschen/mv-tool-api/releases/tag/0.11.1
 .. _Server Version 0.11.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.11.0
+.. _Client Version 0.13.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.13.0
 .. _Client Version 0.12.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.12.0
 .. _Client Version 0.11.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.11.0
