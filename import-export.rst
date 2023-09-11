@@ -3,14 +3,14 @@ Import und Export
 #################
 
 Falls Sie bereits Anforderungen und Maßnahmen in Form von :ref:`Excel-Dateien
-<excel_import>` vorliegen haben, stellt dies kein Problem dar. Sie können diese
+<excel_csv_import>` vorliegen haben, stellt dies kein Problem dar. Sie können diese
 einfach in das MV-Tool importieren. Zudem können Sie Anforderungen aus
 :ref:`IT-Grundschutz-Baussteinen <gs_import>` des IT-Grundschutz-Kompendiums
 importieren.
 
 Die Inhalte, die Sie im MV-Tool erstellt haben, können auch mit externen
 Personen geteilt werden, die keinen Zugriff auf das MV-Tool haben. Hierfür
-können Sie die Inhalte in eine :ref:`Excel-Datei exportieren <excel_export>`.
+können Sie die Inhalte in eine :ref:`Excel-Datei exportieren <excel_csv_export>`.
 Diese können Sie dann an die betreffende Person weitergeben. Wenn diese die
 Inhalte bearbeitet hat, können Sie die Excel-Datei erneut in das MV-Tool
 importieren und auf diese Weise die Änderungen übernehmen.
@@ -55,35 +55,78 @@ Modultabelle angezeigt. Durch Klicken auf den Namen des IT-Grundschutz-Bausteins
 können Sie die Anforderungen des IT-Grundschutz-Bausteins in der
 :ref:`Anforderungstabelle <requirements>` einsehen.
 
-.. _excel_import:
+.. _excel_csv_import:
 
-Import aus einer Excel-Datei
-############################
+Excel- und CSV-Import
+#####################
 
-Sie können Anforderungen, Maßnahmen, Dokumente sowie Anforderungskataloge und
-deren Module aus Excel-Dateien in das MV-Tool importieren. Dabei muss die
-Excel-Datei bestimmte Spaltenbezeichnungen aufweisen, damit das MV-Tool den
-Inhalt korrekt importieren kann. Die erwarteten Spaltenbezeichnungen sind in den
-folgenden Abschnitten aufgelistet.
+Sie können Anforderungen, Maßnahmen, Dokumente sowie Anforderungskataloge, deren
+Module und Kataloganforderungen, die im Excel- oder CSV-Format vorliegen, in das
+MV-Tool importieren. Dabei muss die Excel- oder CSV-Datei bestimmte
+Spaltenbezeichnungen aufweisen, damit das MV-Tool den Inhalt korrekt importieren
+kann. Die erwarteten Spaltenbezeichnungen sind in den folgenden Abschnitten
+aufgelistet.
 
 Sie haben die Möglichkeit, mehrere Inhalte, die in Beziehung zueinander stehen,
-gemeinsam in einer Excel-Datei zu importieren. So können Sie beispielsweise
-Anforderungen, Maßnahmen und Dokumente gleichzeitig mithilfe einer Excel-Datei
-importieren.
+gemeinsam in einer Excel- oder CSV-Datei zu importieren. So können Sie
+beispielsweise Anforderungen, Maßnahmen und Dokumente gleichzeitig mithilfe
+einer Excel-Datei importieren.
 
-Um eine Excel-Datei zu importieren, gehen Sie wie folgt vor:
+Um eine Excel- oder CSV-Datei zu importieren, gehen Sie wie folgt vor:
 
 1. Wechseln Sie zur gewünschten Tabellenansicht (z.B. :ref:`Anforderungen
    <anforderungen>` oder :ref:`Maßnahmen <massnahmen>`).
-2. Über der Tabelle finden Sie entweder den Button :guilabel:`Import Excel` oder
-   den Button :guilabel:`Import`, der ein Dropdown-Menü mit verschiedenen
-   Import-Optionen öffnet. In letzterem Fall wählen Sie den Eintrag
-   :menuselection:`Import from Excel`.
-3. Im sich öffnenden Dialog wählen Sie die zu importierende Excel-Datei aus und
-   klicken Sie auf den Button :guilabel:`Upload file`.
+2. Über der Tabelle finden Sie den Button :guilabel:`Import`, der entweder
+   direkt den Import-Dialog öffnet oder ein Dropdown-Menü mit verschiedenen
+   Import-Optionen anzeigt. In letzterem Fall wählen Sie den Eintrag
+   :menuselection:`Import Excel/CSV`.
+3. Im sich öffnenden Dialog wählen Sie die zu importierende Datei aus. Falls Sie
+   eine CSV-Datei auswählen, müssen Sie weitere 
+   :ref:`Einstellungen zum Dateiformat <csv_settings>` vornehmen. Klicken Sie
+   anschließend auf den Button :guilabel:`Upload file`, um den Import zu
+   starten.
 
 Nachdem der Upload abgeschlossen ist, werden die neu importierten Inhalte in der
 Tabelle angezeigt.
+
+.. _csv_settings:
+
+Einstellungen für CSV-Dateien
+=============================
+
+Wenn Sie eine CSV-Datei importieren, müssen Sie weitere Einstellungen
+vornehmen. Diese Einstellungen werden im Import- und Export-Dialog angezeigt,
+sofern Sie CSV als Dateiformat ausgewählt haben.
+
+Je nachdem, durch welches Programm Ihre CSV-Datei erstellt wurde, kann der
+Aufbau variieren. CSV-Dateien können beispielsweise unterschiedliche
+Zeichenkodierungen und Trennzeichen verwenden. Daher müssen Sie diese
+Einstellungen vornehmen, um sicherzustellen, dass die CSV-Datei vom MV-Tool
+korrekt gelesen oder geschrieben werden kann.
+
+.. list-table::
+   :header-rows: 1
+
+   * - 
+     - Beschreibung
+     - Erforderlich
+   * - :guilabel:`Encoding`
+     - Geben Sie hier die Zeichenkodierung der CSV-Datei an. Das MV-Tool bietet
+       Ihnen eine Auswahl gängiger Zeichenkodierungen an. Sie können aber auch
+       weitere, unkonventionellere Zeichenkodierungen angeben. Sofern die
+       Zeichenkodierung nicht durch Ihre Instanz des MV-Tools unterstützt wird,
+       wird beim Import eine Fehlermeldung angezeigt.
+     - Ja
+   * - :guilabel:`Delimiter`
+     - Geben Sie hier das Trennzeichen an, das in der CSV-Datei verwendet wird.
+       Gängige Trennzeichen sind beispielsweise Komma ``,`` oder Semikolon ``;``.
+     - Ja
+
+.. note::
+
+  CSV-Dateien können sich zusätzlich zur Zeichenkodierung und zum Trennzeichen
+  in anderen Punkten unterscheiden. Diese Formatunterschiede werden vom MV-Tool
+  automatisch erkannt und berücksichtigt.
 
 .. _project_columns:
 
@@ -389,35 +432,38 @@ nachfolgend aufgelistet.
        Kataloganforderung liefert.
      - 
 
-.. _excel_export:
+.. _excel_csv_export:
 
-Export in eine Excel-Datei
-##########################
+Excel- und CSV-Export
+#####################
 
-Der Export von Inhalten aus dem MV-Tool in eine Excel-Datei ist in allen
-Tabellenansichten möglich. So lassen sich beispielsweise Projektdaten,
+Der Export von Inhalten aus dem MV-Tool in eine Excel- oder CSV-Datei ist in
+allen Tabellenansichten möglich. Sie können beispielsweise Projektdaten,
 Anforderungen, Maßnahmen, Dokumente, Anforderungskataloge, Module und
 Kataloganforderungen exportieren.
 
-Um eine Excel-Datei zu exportieren, folgen Sie bitte diesen Schritten:
+Um Inhalte in eine Excel- oder CSV-Datei zu exportieren, folgen Sie bitte diesen
+Schritten:
 
-1. Klicken Sie auf den Button :guilabel:`Export Excel` oberhalb der Tabelle.
+1. Klicken Sie auf den Button :guilabel:`Export` oberhalb der Tabelle.
    Wählen Sie im sich öffnenden Dialog die Spalten aus, die Sie exportieren
    möchten, und klicken Sie auf :guilabel:`Next`.
-2. Geben Sie im nächsten Schritt den gewünschten Dateinamen für die zu
-   exportierende Excel-Datei ein und klicken Sie auf :guilabel:`Download`.
+2. Im nächsten Schritt wählen Sie das gewünschte Dateiformat (Excel oder CSV)
+   aus und geben Sie den gewünschten Dateinamen für die zu exportierende Datei ein.
+   Falls Sie CSV als Dateiformat ausgewählt haben, müssen Sie weitere
+   :ref:`Einstellungen zum Dateiformat <csv_settings>` vornehmen. Klicken Sie
+   abschließend auf :guilabel:`Download`, um den Export zu starten.
 3. Sobald der Downloadvorgang abgeschlossen ist, klicken Sie auf den Button
    :guilabel:`Save file`, um die heruntergeladene Datei zu speichern.
 
 .. hint:
 
-  Wenn Sie eine Excel-Datei exportieren, werden nur die Inhalte exportiert, die
-  gerade in der Tabelle angezeigt werden. Wenn Sie also beispielsweise in der
-  Tabelle :ref:`Anforderungen <anforderungen>` nach bestimmten Anforderungen
-  filtern oder suchen, werden nur die resultierenden Anforderungen exportiert.
-  Auch die Sortierung der Inhalte in der Tabelle wird beim Export
-  berücksichtigt.
+  Wenn Sie eine Excel- oder CSV-Datei exportieren, werden nur die Inhalte
+  exportiert, die gerade in der Tabelle angezeigt werden. Wenn Sie also
+  beispielsweise in der Tabelle :ref:`Anforderungen <anforderungen>` nach
+  bestimmten Anforderungen suchen oder filtern, werden nur die resultierenden
+  Anforderungen exportiert. Auch die Sortierung der Inhalte in der Tabelle wird
+  beim Export berücksichtigt.
 
   Leere Spalten werden beim Export nicht berücksichtigt, auch wenn sie in der
   Auswahl der zu exportierenden Spalten enthalten sind.
-
