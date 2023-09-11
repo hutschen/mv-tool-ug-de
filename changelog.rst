@@ -2,6 +2,35 @@
 Changelog
 ==========
 
+Version 0.14.0
+==============
+
+Veröffentlicht am 30.09.2023. Bestehend aus `Server Version 0.14.0`_ und 
+`Client Version 0.14.0`_.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Typ
+     - Part
+     - Beschreibung
+     - Issue
+   * - Enhancement
+     - Server, Client
+     - Im Client können nun JIRA-Benutzer als Bearbeiter beim 
+       :ref:`Erstellen von Tickets <create_issue>` ausgewählt werden. Im Server
+       wurden dazu neue Web-API-Endpunkte zu Abfrage von JIRA-Benutzern
+       hinzugefügt und Anpassungen am Datenmodell vorgenommen.
+     - `#158 <https://github.com/hutschen/mv-tool-api/issues/158>`_, 
+       `#160 <https://github.com/hutschen/mv-tool-api/issues/160>`_,
+       `#127 <https://github.com/hutschen/mv-tool-ng/issues/127>`_
+   * - Enhancement
+     - Client
+     - Überarbeitung des Upload-Dialogs zur Verwendung der gleichen Komponenten
+       wie im Import-Dialog für Excel und CSV-Dateien.
+     - `#122 <https://github.com/hutschen/mv-tool-ng/issues/122>`_
+
+
 Version 0.13.0
 ==============
 
@@ -136,10 +165,12 @@ sowohl für den `Server <https://github.com/hutschen/mv-tool-api/releases>`_ als
 auch für den `Client <https://github.com/hutschen/mv-tool-ng/releases>`_ des
 MV-Tools.
 
+.. _Server Version 0.14.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.14.0
 .. _Server Version 0.13.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.13.0
 .. _Server Version 0.12.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.12.0
 .. _Server Version 0.11.1: https://github.com/hutschen/mv-tool-api/releases/tag/0.11.1
 .. _Server Version 0.11.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.11.0
+.. _Client Version 0.14.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.14.0
 .. _Client Version 0.13.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.13.0
 .. _Client Version 0.12.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.12.0
 .. _Client Version 0.11.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.11.0
