@@ -102,6 +102,8 @@ entsprechenden Maßnahme. Danach öffnet sich ein Dropdown-Menü, in dem Sie
 entweder ein neues JIRA-Ticket erstellen (:guilabel:`Create issue`) oder ein
 bereits vorhandenes JIRA-Ticket auswählen können (:guilabel:`Select issue`).
 
+.. _create_issue:
+
 JIRA-Ticket erstellen
 =====================
 
@@ -121,6 +123,12 @@ folgenden Eingabefeldern:
        angezeigt, das Sie mit Ihrem Projekt verknüpft haben. Wählen Sie den
        gewünschten Ticket-Typ aus.
      - Ja
+   * - :guilabel:`Assignee`
+     - In diesem Feld können Sie den JIRA-Benutzer auswählen, die für die
+       Bearbeitung des JIRA-Tickets verantwortlich ist. Die Liste der
+       verfügbaren JIRA-Benutzer wird aus dem JIRA-Projekt übernommen, das Sie
+       mit Ihrem Projekt verknüpft haben.
+     -
    * - :guilabel:`Summary`
      - Geben Sie hier eine kurze Zusammenfassung des JIRA-Tickets an.
        Diese wird in JIRA als Titel des Tickets verwendet. Dieses Feld ist
