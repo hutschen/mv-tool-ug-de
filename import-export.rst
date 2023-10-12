@@ -20,21 +20,22 @@ importieren und auf diese Weise die Änderungen übernehmen.
 Import von IT-Grundschutz Bausteinen
 ####################################
 
-Sie können IT-Grundschutz-Baussteine des IT-Grundschutz-Kompendiums im
-Word-Format in das MV-Tool importieren. Die Word-Dateien der
-IT-Grundschutz-Baussteine können Sie auf der `Webseite des BSI herunterladen
-<https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Kompendium/IT-Grundschutz-Bausteine/Bausteine_Download_Edition_node.html>`_.
-
-Sie haben ebenso die Möglichkeit, benutzerdefinierte IT-Grundschutz-Bausteine zu importieren,
-sofern diese als Word-Datei vorliegen und deren Struktur der
-Struktur der Word-Dateien der IT-Grundschutz-Bausteine entspricht.
-
 .. hint::
 
   Bitte beachten Sie, dass bei der Verarbeitung von
   IT-Grundschutz-Bausteinen im MV-Tool die `Nutzungsbedingungen des BSI
   <https://www.bsi.bund.de/DE/Service/Nutzungsbedingungen/Nutzungsbedingungen_node.html>`_
   einzuhalten sind.
+
+Sie können IT-Grundschutz-Baussteine des IT-Grundschutz-Kompendiums im
+Word-Format in das MV-Tool importieren. Die Word-Dateien der
+IT-Grundschutz-Baussteine können Sie auf der `Webseite des BSI herunterladen
+<https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Kompendium/IT-Grundschutz-Bausteine/Bausteine_Download_Edition_node.html>`_.
+
+Sie haben auch die Möglichkeit,
+:ref:`benutzerdefinierte IT-Grundschutz-Bausteine <gs_import_custom_bs>` zu
+importieren, sofern diese als Word-Datei vorliegen und deren Struktur der
+Struktur der Word-Dateien der IT-Grundschutz-Bausteine entspricht.
 
 Folgen Sie diesen Schritten, um einen IT-Grundschutz-Baustein zu
 importieren:
@@ -54,6 +55,149 @@ Nach Abschluss des Uploads wird der IT-Grundschutz-Baustein in der
 Modultabelle angezeigt. Durch Klicken auf den Namen des IT-Grundschutz-Bausteins
 können Sie die Anforderungen des IT-Grundschutz-Bausteins in der
 :ref:`Anforderungstabelle <requirements>` einsehen.
+
+.. _gs_import_custom_bs:
+
+Import von benutzerdefinierten IT-Grundschutz-Bausteinen
+========================================================
+
+Neben den offiziellen IT-Grundschutz-Bausteinen des BSI können Sie über die
+Import-Funktion für :ref:`IT-Grundschutz-Bausteine <gs_import>` auch eigene,
+benutzerdefinierte Bausteine importieren. Voraussetzung ist, dass diese als
+Word-Datei vorliegen und ihre Struktur derjenigen der IT-Grundschutz-Bausteine
+entspricht.
+
+Dokumentstruktur
+----------------
+
+Für die korrekte Verarbeitung im MV-Tool muss die Struktur des Word-Dokuments
+wie folgt aussehen:
+
+.. code-block:: none
+
+  <Bausteintitel>
+  └── <Überschrift_Anforderungen>
+      ├── <Überschrift_B>
+      │   ├── <Anforderungstitel>
+      │   │   └── <Anforderungstext>
+      │   └── ...
+      ├── <Überschrift_S>
+      │   ├── <Anforderungstitel>
+      │   │   └── <Anforderungstext>
+      │   └── ...
+      └── <Überschrift_H>
+          ├── <Anforderungstitel>
+          │   └── <Anforderungstext>
+          └── ...
+
+Bitte verwenden Sie die Formatvorlagen von Word, um die oben dargestellte
+Struktur umzusetzen. Welche Formatvorlagen für welche Elemente zu verwenden
+sind, zeigt die folgende Tabelle:
+
+.. list-table::
+   :widths: 35 45 20
+   :header-rows: 1
+
+   * - Element
+     - Inhalt
+     - Formatvorlage
+   * - ``<Bausteintitel>``
+     - siehe :ref:`gs_import_custom_bs_title`
+     - ``Titel``
+   * - ``<Überschrift_Anforderungen>``
+     - Text "Anforderungen"
+     - ``Überschrift 1``
+   * - ``<Überschrift_B>``
+     - Text "Basis-Anforderungen"
+     - ``Überschrift 2``
+   * - ``<Überschrift_S>``
+     - Text "Standard-Anforderungen"
+     - ``Überschrift 2``
+   * - ``<Überschrift_H>``
+     - Text "Anforderungen bei erhöhtem Schutzbedarf"
+     - ``Überschrift 2``
+   * - ``<Anforderungstitel>``
+     - siehe :ref:`gs_import_custom_bs_requirement_title`
+     - ``Überschrift 3``
+   * - ``<Anforderungstext>``
+     - Beliebiger Text, der sich über mehrere Absätze erstrecken kann.
+     - ``Fließtext``
+
+.. _gs_import_custom_bs_title:
+
+Auszeichnen des Bausteintitels
+------------------------------
+
+Formatieren Sie den Titel des Bausteins als Titel Ihres Word-Dokuments. In der
+Regel finden Sie dafür eine vordefinierte Formatvorlage, die ``Überschrift 1`` 
+übergeordnet ist. Der Titel Ihres Bausteins sollte wie folgt strukturiert sein:
+
+.. code-block:: none
+
+  <Baustein-ID> <Bausteinname>
+
+.. list-table::
+   :header-rows: 1
+
+   * - Element
+     - Beschreibung
+     - Beispiel
+     - Erforderlich
+   * - ``<Baustein-ID>``
+     - Beginnt mit einem oder mehreren Großbuchstaben, gefolgt von einer oder
+       mehreren Zahlen, die durch Punkte getrennt sind.
+     - ``B.1.2``
+     - Ja
+   * - ``<Bausteinname>``
+     - Kann aus beliebigen Zeichen bestehen.
+     - 
+     - Ja
+
+.. _gs_import_custom_bs_requirement_title:
+
+Auszeichnen von Anforderungstiteln
+----------------------------------
+
+Die Anforderungstitel sollten den jeweiligen Überschriften zugeordnet und mit 
+der Word-Formatvorlage ``Überschrift 3`` formatiert werden. Der Text der 
+Anforderungen sollte mit der Formatvorlage ``Fließtext`` versehen werden.
+
+Ein gültiger Anforderungstitel ist nach dem folgenden Schema aufgebaut. Dabei
+darf die Reihenfolge der Elemente ``<Verantwortliche>`` und ``<Priorität>`` auch
+vertauscht werden.
+
+.. code-block:: none
+
+  <Anforderungs-ID> <Anforderungsname> <Verantwortliche> <Priorität>
+
+.. list-table::
+   :header-rows: 1
+
+   * - Element
+     - Beschreibung
+     - Beispiel
+     - Erforderlich
+   * - ``<Anforderungs-ID>``
+     - Beginnt mit einem oder mehreren Großbuchstaben, gefolgt von einer oder
+       mehreren Zahlen, die durch Punkte getrennt sind. Muss mit ``.A`` und
+       einer oder mehreren Zahlen enden.
+     - ``REQ.1.2.A1``
+     - Ja
+   * - ``<Anforderungsname>``
+     - Kann aus beliebigen Zeichen bestehen.
+     - 
+     - Ja
+   * - ``<Verantwortliche>``
+     - Optional und in eckigen Klammern ``[ ]`` angegeben.
+     - ``[Management]``
+     - 
+   * - ``<Priorität>``
+     - Muss einer der folgenden Werte sein: ``B``, ``S`` oder ``H`` (für Basis-,
+       Standard- oder Anforderungen bei erhöhtem Schutzbedarf). Angegeben in
+       runden Klammern ``( )``.
+     - ``(B)``
+     - Ja
+
 
 .. _excel_csv_import:
 

@@ -2,6 +2,26 @@
 Changelog
 ==========
 
+Version 0.14.1
+==============
+
+Veröffentlicht am 12.10.2023. Bestehend aus `Server Version 0.14.1`_ und 
+`Client Version 0.14.0`_.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Typ
+     - Part
+     - Beschreibung
+     - Issue
+   * - Enhancement
+     - Server
+     - Die :ref:`Anbindung an einen LDAP-Verzeichnisdienst <connect_to_ldap>`
+       ist nun möglich, so dass sich Benutzer mit ihren LDAP-Zugangsdaten
+       anmelden können.
+     - `#159 <https://github.com/hutschen/mv-tool-api/issues/159>`_
+
 Version 0.14.0
 ==============
 
@@ -165,6 +185,7 @@ sowohl für den `Server <https://github.com/hutschen/mv-tool-api/releases>`_ als
 auch für den `Client <https://github.com/hutschen/mv-tool-ng/releases>`_ des
 MV-Tools.
 
+.. _Server Version 0.14.1: https://github.com/hutschen/mv-tool-api/releases/tag/0.14.1
 .. _Server Version 0.14.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.14.0
 .. _Server Version 0.13.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.13.0
 .. _Server Version 0.12.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.12.0
