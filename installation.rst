@@ -58,6 +58,13 @@ minimale Konfiguration können Sie den folgenden Inhalt in eine Datei namens
     Ersetzen Sie bitte ``http://localhost:2990/jira`` durch die URL Ihrer
     JIRA-Instanz.
 
+Falls Sie über keine JIRA-Instanz verfügen, können Sie das MV-Tool auch ohne
+JIRA-Integration verwenden. In diesem Fall können Sie den Abschnitt ``jira`` aus
+der Konfigurationsdatei entfernen und stattdessen eine 
+:ref:`Verbindung zu einem LDAP-Verzeichnisdienst <connect_to_ldap>` herstellen.
+
+.. _connect_to_jira:
+
 Verbindung zu JIRA herstellen
 =============================
 
@@ -78,6 +85,130 @@ HTTPS-Verbindung zu JIRA verwenden möchten, dann müssen Sie in der
 Konfigurationsdatei ``config.yml`` zusätzlich zur URL auch die Option
 ``verify_ssl`` hinzufügen. Diese Option muss im ``jira``-Abschnitt der Datei
 hinzugefügt und auf ``false`` gesetzt werden.
+
+
+.. _connect_to_ldap:
+
+Verbindung zu LDAP herstellen
+=============================
+
+Wenn Ihnen keine JIRA-Instanz zur Verfügung steht oder Sie zusätzlich Nutzern,
+die JIRA nicht verwenden, den Zugriff auf das MV-Tool ermöglichen möchten,
+können Sie eine Verbindung zu einem LDAP-Verzeichnisdienst herstellen. 
+
+Bei der Anmeldung eines Nutzers am MV-Tool wird das MV-Tool zunächst versuchen,
+den Nutzer gegenüber dem LDAP-Verzeichnisdienst zu authentifizieren. Falls dies
+nicht erfolgreich ist, versucht das MV-Tool, den Nutzer gegenüber JIRA zu
+authentifizieren, sofern eine :ref:`Anbindung an JIRA <connect_to_jira>`
+konfiguriert ist.
+
+Die folgenden Konfigurationsparameter können in der ``config.yml``-Datei
+angegeben werden, um eine Verbindung zu einem LDAP-Server herzustellen:
+
+.. code-block:: yaml
+
+    ldap:
+        protocol: ldap
+        port: 389
+        host: localhost
+        account_dn: uid=search,cn=users,dc=example,dc=com
+        account_password: password
+        base_dn: dc=example,dc=com
+        user_filter: (objectClass=person)
+        attributes:
+            login: uid
+            firstname: givenName
+            lastname: sn
+            email: mail
+        attributes_encoding: utf-8
+
+Die folgende Tabelle erklärt die einzelnen Konfigurationsparameter im Detail:
+
+.. list-table:: 
+   :widths: 20 70 10
+   :header-rows: 1
+
+   * - Parameter
+     - Beschreibung
+     - Erforderlich
+   * - ``protocol``
+     - Das Protokoll für die Verbindung mit dem LDAP-Server. Dieses kann entweder
+       ``ldap`` oder ``ldaps`` sein. Standardmäßig wird ``ldap`` verwendet.
+     - 
+   * - ``host``
+     - Der Hostname oder die IP-Adresse des LDAP-Servers.
+     - Ja
+   * - ``port``
+     - Der Port des LDAP-Servers. Wenn nicht angegeben, wird der Port automatisch
+       auf ``389`` (für ``ldap``) oder ``636`` (für ``ldaps``) gesetzt.
+     - 
+   * - ``verify_ssl``
+     - Die Überprüfung des SSL-Zertifikats des Servers. Dieser Parameter ist nur
+       relevant, wenn ``protocol`` auf ``ldaps`` gesetzt ist. Standardmäßig
+       ist dieser auf ``true`` gesetzt. Um die Überprüfung zu deaktivieren, setzen Sie
+       diesen Parameter auf ``false``. Alternativ können Sie auch einen Pfad zu
+       einer CA-Zertifikatsdatei angeben, die zur Überprüfung des Zertifikats
+       verwendet werden soll.
+     - 
+   * - ``account_dn``
+     - Der Distinguished Name (DN) des Kontos, das für die Bindung an den
+       LDAP-Server verwendet wird. Dieser Parameter wird nur benötigt, wenn der
+       LDAP-Server eine Authentifizierung erfordert, um Suchanfragen nach
+       Nutzern auszuführen.
+     - 
+   * - ``account_password``
+     - Das Passwort des Kontos, das für Suchanfragen verwendet wird. Dies ist nur
+       erforderlich, wenn ``account_dn`` gesetzt ist.
+     - Bedingt
+   * - ``base_dn``
+     - Der Base Distinguished Name, von dem aus die LDAP-Suche beginnt.
+     - Ja
+   * - ``user_filter``
+     - Der Filter zum Einschränken der Benutzersuche im LDAP-Verzeichnis.
+     - 
+   * - ``attributes``
+     - Siehe :ref:`ldap_attributes` für weitere Informationen.
+     - Ja
+   * - ``attributes_encoding``
+     - Die Zeichenkodierung der Werte der LDAP-Attribute. Standardmäßig ``utf-8``.
+     - 
+
+.. _ldap_attributes:
+
+Mapping von LDAP-Attributen
+---------------------------
+
+Die ``attributes``-Konfiguration wird verwendet, damit das MV-Tool Nutzerdaten
+aus dem LDAP-Verzeichnis abfragen kann. Die folgende Tabelle zeigt die möglichen
+Attribute und deren Bedeutung:
+
+.. list-table:: 
+   :widths: 20 70 10
+   :header-rows: 1
+
+   * - Parameter
+     - Beschreibung
+     - Erforderlich
+   * - ``login``
+     - LDAP-Attribut für den Benutzerlogin (z.B. ``uid``).
+     - Ja
+   * - ``firstname``
+     - LDAP-Attribut für den Vornamen des Benutzers.
+     - 
+   * - ``lastname``
+     - LDAP-Attribut für den Nachnamen des Benutzers.
+     - 
+   * - ``email``
+     - LDAP-Attribut für die E-Mail-Adresse des Benutzers.
+     - 
+
+.. seealso::
+
+    Für eine allgemeine Einführung in die Konfiguration von LDAP-Anbindungen und
+    die Authentifizierung von Benutzern wird der Blog-Beitrag
+    `"LDAP Anbindung am Beispiel von Redmine"
+    <https://www.univention.de/blog-de/2021/03/integrate-with-ldap-redmine/>`_
+    empfohlen.
 
 
 Datenbankverbindung herstellen
