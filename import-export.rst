@@ -15,22 +15,41 @@ Diese können Sie dann an die betreffende Person weitergeben. Wenn diese die
 Inhalte bearbeitet hat, können Sie die Excel-Datei erneut in das MV-Tool
 importieren und auf diese Weise die Änderungen übernehmen.
 
+.. _import_gs_kompendium:
+
+Import des IT-Grundschutz-Kompendiums
+#####################################
+
+.. hint::
+
+  Bitte beachten Sie, dass bei der Verarbeitung von IT-Grundschutz-Bausteinen im
+  MV-Tool die `Nutzungsbedingungen des BSI`_ einzuhalten sind.
+
+Das MV-Tool ermöglicht den Import des IT-Grundschutz-Kompendiums im XML-Format.
+Die entsprechende XML-Datei kann von der `BSI IT-Grundschutz-Webseite`_
+heruntergeladen werden.
+
+Um das IT-Grundschutz-Kompendium zu importieren, gehen Sie wie folgt vor:
+
+1. Öffnen Sie die Übersicht der :ref:`Anforderungskataloge <catalogs>`.
+2. Klicken Sie auf den Button :guilabel:`Import` oberhalb der Tabelle. Ein
+   Dropdown-Menü öffnet sich. Wählen Sie hier :menuselection:`Import from catalog` 
+   und navigieren Sie im daraufhin erscheinenden Dialog zur XML-Datei.
+   Bestätigen Sie den Import durch einen Klick auf :guilabel:`Upload file`.
+
 .. _gs_import:
 
-Import von IT-Grundschutz Bausteinen
+Import von IT-Grundschutz-Bausteinen
 ####################################
 
 .. hint::
 
-  Bitte beachten Sie, dass bei der Verarbeitung von
-  IT-Grundschutz-Bausteinen im MV-Tool die `Nutzungsbedingungen des BSI
-  <https://www.bsi.bund.de/DE/Service/Nutzungsbedingungen/Nutzungsbedingungen_node.html>`_
-  einzuhalten sind.
+  Bitte beachten Sie, dass bei der Verarbeitung von IT-Grundschutz-Bausteinen im
+  MV-Tool die `Nutzungsbedingungen des BSI`_ einzuhalten sind.
 
 Sie können IT-Grundschutz-Baussteine des IT-Grundschutz-Kompendiums im
-Word-Format in das MV-Tool importieren. Die Word-Dateien der
-IT-Grundschutz-Baussteine können Sie auf der `Webseite des BSI herunterladen
-<https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Kompendium/IT-Grundschutz-Bausteine/Bausteine_Download_Edition_node.html>`_.
+Word-Format in das MV-Tool importieren. Die Word-Dateien der Baussteine können
+Sie auf der `Webseite zum IT-Grundschutz des BSI`_ herunterladen.
 
 Sie haben auch die Möglichkeit,
 :ref:`benutzerdefinierte IT-Grundschutz-Bausteine <gs_import_custom_bs>` zu
@@ -47,14 +66,16 @@ importieren:
    :ref:`Tabelle mit den Modulen <modules>` des Anforderungskatalogs öffnet sich.
 3. Klicken Sie auf den Button :guilabel:`Import` über der Modultabelle. Es
    öffnet sich ein Dropdown-Menü. Wählen Sie den Eintrag  :menuselection:`Import
-   from catalog` aus. Wählen Sie im sich öffnenden Dialog den
-   IT-Grundschutz-Baustein zum Upload aus und klicken Sie auf den Button
-   :guilabel:`Upload file`.
+   from catalog` aus. Wählen Sie im sich öffnenden Dialog die Word-Datei zum
+   Upload aus und klicken Sie auf den Button :guilabel:`Upload file`.
 
 Nach Abschluss des Uploads wird der IT-Grundschutz-Baustein in der
 Modultabelle angezeigt. Durch Klicken auf den Namen des IT-Grundschutz-Bausteins
 können Sie die Anforderungen des IT-Grundschutz-Bausteins in der
 :ref:`Anforderungstabelle <requirements>` einsehen.
+
+.. _Webseite zum IT-Grundschutz des BSI: https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Standards-und-Zertifizierung/IT-Grundschutz/IT-Grundschutz-Kompendium/it-grundschutz-kompendium_node.html
+.. _Nutzungsbedingungen des BSI: https://www.bsi.bund.de/DE/Service/Nutzungsbedingungen/Nutzungsbedingungen_node.html
 
 .. _gs_import_custom_bs:
 
