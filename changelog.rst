@@ -2,6 +2,26 @@
 Changelog
 ==========
 
+Version 0.14.2
+==============
+
+Veröffentlicht am 14.11.2023. Bestehend aus `Server Version 0.14.2`_ und 
+`Client Version 0.14.0`_.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Typ
+     - Part
+     - Beschreibung
+     - Issue
+   * - Bugfix
+     - Server
+     - Behebung eines Fehlers im Zusammenhang mit dem
+       ``verify_ssl``-Konfigurationsparameter bei der Verwendung von
+       LDAPS-Verbindungen zu einem LDAP-Verzeichnisdienst.
+     - `#171 <https://github.com/hutschen/mv-tool-api/issues/171>`_
+
 Version 0.14.1
 ==============
 
@@ -185,6 +205,7 @@ sowohl für den `Server <https://github.com/hutschen/mv-tool-api/releases>`_ als
 auch für den `Client <https://github.com/hutschen/mv-tool-ng/releases>`_ des
 MV-Tools.
 
+.. _Server Version 0.14.2: https://github.com/hutschen/mv-tool-api/releases/tag/0.14.2
 .. _Server Version 0.14.1: https://github.com/hutschen/mv-tool-api/releases/tag/0.14.1
 .. _Server Version 0.14.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.14.0
 .. _Server Version 0.13.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.13.0
