@@ -2,6 +2,30 @@
 Changelog
 ==========
 
+Version 0.15.0
+==============
+
+Veröffentlicht am 15.11.2023. Bestehend aus `Server Version 0.15.0`_ und 
+`Client Version 0.15.0`_.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Typ
+     - Part
+     - Beschreibung
+     - Issue
+   * - Enhancement
+     - Server, Client
+     - Einführung eines neuen Features zum 
+       :ref:`Import von Katalogen <import_gs_kompendium>`, deren Modulen und
+       Anforderungen im XML-Format. Der Server wurde um eine neue
+       Web-API-Schnittstelle erweitert, um den Upload der XML-Dateien zu
+       ermöglichen. Die UI des Clients wurde um eine Funktion für den Upload
+       einer XML-Datei erweitert.
+     - `#157 <https://github.com/hutschen/mv-tool-api/issues/157>`_,
+       `#134 <https://github.com/hutschen/mv-tool-ng/issues/134>`_
+
 Version 0.14.2
 ==============
 
@@ -205,6 +229,8 @@ sowohl für den `Server <https://github.com/hutschen/mv-tool-api/releases>`_ als
 auch für den `Client <https://github.com/hutschen/mv-tool-ng/releases>`_ des
 MV-Tools.
 
+.. _Server Version 0.15.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.15.0
+.. _Client Version 0.15.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.15.0
 .. _Server Version 0.14.2: https://github.com/hutschen/mv-tool-api/releases/tag/0.14.2
 .. _Server Version 0.14.1: https://github.com/hutschen/mv-tool-api/releases/tag/0.14.1
 .. _Server Version 0.14.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.14.0
