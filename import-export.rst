@@ -26,7 +26,7 @@ Import des IT-Grundschutz-Kompendiums
   MV-Tool die `Nutzungsbedingungen des BSI`_ einzuhalten sind.
 
 Das MV-Tool ermöglicht den Import des IT-Grundschutz-Kompendiums im XML-Format.
-Die entsprechende XML-Datei kann von der `BSI IT-Grundschutz-Webseite`_
+Die entsprechende XML-Datei kann von der `Webseite zum IT-Grundschutz des BSI`_
 heruntergeladen werden.
 
 Um das IT-Grundschutz-Kompendium zu importieren, gehen Sie wie folgt vor:
