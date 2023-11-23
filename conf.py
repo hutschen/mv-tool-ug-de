@@ -3,6 +3,8 @@
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import os
+
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
@@ -27,3 +29,8 @@ language = "de"
 html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
 html_css_files = ["css/custom.css"]
+html_context = {
+    "legal_notice_url": os.environ.get(
+        "LEGAL_NOTICE_URL", "http://hutschen.com/pages/legal-notice/"
+    )
+}
