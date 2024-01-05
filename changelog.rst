@@ -2,6 +2,33 @@
 Changelog
 ==========
 
+Version 0.15.1
+==============
+
+Veröffentlicht am 04.01.2024. Bestehend aus `Server Version 0.15.1`_ und `Client
+Version 0.15.0`_.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Typ
+     - Part
+     - Beschreibung
+     - Issue
+   * - Enhancement
+     - Server
+     - Export des Umsetzungsstatus von Projekten, Anforderungen, Maßnahmen und
+       Dokumenten in Excel- und CSV-Dateien.
+     - `#175 <https://github.com/hutschen/mv-tool-api/issues/175>`_
+   * - Bugfix
+     - Server
+     - Beheben eines Fehlers beim Download von Excel- und CSV-Dateien.
+     - `#174 <https://github.com/hutschen/mv-tool-api/issues/174>`_
+   * - Enhancement
+     - Server
+     - Verbesserung der Authentifizierung bei der Verwendung von LDAP.
+     - `#173 <https://github.com/hutschen/mv-tool-api/issues/173>`_
+
 Version 0.15.0
 ==============
 
@@ -229,6 +256,7 @@ sowohl für den `Server <https://github.com/hutschen/mv-tool-api/releases>`_ als
 auch für den `Client <https://github.com/hutschen/mv-tool-ng/releases>`_ des
 MV-Tools.
 
+.. _Server Version 0.15.1: https://github.com/hutschen/mv-tool-api/releases/tag/0.15.1
 .. _Server Version 0.15.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.15.0
 .. _Client Version 0.15.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.15.0
 .. _Server Version 0.14.2: https://github.com/hutschen/mv-tool-api/releases/tag/0.14.2
