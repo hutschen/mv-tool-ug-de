@@ -12,7 +12,7 @@ import os
 project = "MV-Tool"
 copyright = "%d, Helmar Hutschenreuter" % datetime.datetime.utcnow().year
 author = "Helmar Hutschenreuter"
-release = "0.11.1"
+release = "0.15.1"
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
