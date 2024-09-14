@@ -2,6 +2,25 @@
 Changelog
 ==========
 
+Version 0.15.2
+==============
+
+Veröffentlicht am 12.03.2024. Bestehend aus `Server Version 0.15.2`_ und `Client
+Version 0.15.0`_.
+
+.. list-table::
+   :header-rows: 1
+
+   * - Typ
+     - Part
+     - Beschreibung
+     - Issue
+   * - Enhancement
+     - Server
+     - Aktualisierung der Abhängigkeiten, um mögliche Fehler zu beheben und
+       mögliche Sicherheitslücken zu schließen.
+     - 
+
 Version 0.15.1
 ==============
 
@@ -256,6 +275,7 @@ sowohl für den `Server <https://github.com/hutschen/mv-tool-api/releases>`_ als
 auch für den `Client <https://github.com/hutschen/mv-tool-ng/releases>`_ des
 MV-Tools.
 
+.. _Server Version 0.15.2: https://github.com/hutschen/mv-tool-api/releases/tag/0.15.2
 .. _Server Version 0.15.1: https://github.com/hutschen/mv-tool-api/releases/tag/0.15.1
 .. _Server Version 0.15.0: https://github.com/hutschen/mv-tool-api/releases/tag/0.15.0
 .. _Client Version 0.15.0: https://github.com/hutschen/mv-tool-ng/releases/tag/0.15.0
