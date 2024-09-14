@@ -13,28 +13,22 @@ auf der `Website von Docker <https://docs.docker.com/engine/install/>`_.
 
 .. TODO: Podman als Alternative zu Docker erwähnen.
 
-JIRA
-====
-
-Eine Verbindung zu JIRA ist für die Nutzung des MV-Tools zwingend erforderlich.
-Sie benötigen daher eine JIRA Instanz mit aktivierter JSON API, auf welche das
-MV-Tool per HTTP/HTTPS zugreifen kann. Die JSON API ist in JIRA standardmäßig
-aktiv.
-
-.. note::
-
-   Das MV-Tool wird mit JIRA Version 9 getestet. Das MV-Tool verwendet `jira-python
-   <https://jira.readthedocs.io/>`_ für den Zugriff auf JIRA. Eine
-   Kompatibilität mit früheren JIRA Versionen kann daher gegeben sein.
+Benutzerauthentifizierung
+=========================
 
 Das MV-Tool verfügt derzeit über keine eigene Benutzerverwaltung, sondern
-verwendet die Benutzerauthentifizierung der JIRA-Instanz, mit der es verbunden
-ist. Die Benutzer melden sich beim MV-Tool mit ihren JIRA-Anmeldedaten an. Das
-MV-Tool wiederum verwendet diese Anmeldedaten, um sich über HTTP Basic Auth bei
-der JSON API der JIRA-Instanz zu authentifizieren. Die Anmeldedaten werden vom
-MV-Tool nicht serverseitig gespeichert und das MV-Tool verwaltet keine
-serverseitigen Benutzersitzungen. Die Benutzersitzung wird nur clientseitig,
-d.h. im Browser des Benutzers verwaltet. 
+verwendet für die Benutzerauthentifizierung einen externen :ref:`LDAP-Dienst
+<connect_to_ldap>` oder die :ref:`JIRA-Instanz <connect_to_jira>`, mit der es
+verbunden ist. Die Benutzer melden sich beim MV-Tool mit ihren LDAP- oder
+JIRA-Anmeldedaten an.
+
+Bei einer Authentifizierung über LDAP übermittelt das MV-Tool die Anmeldedaten
+an den LDAP-Server, um die Anmeldung zu überprüfen. Bei der Authentifizierung
+über JIRA verwendet das MV-Tool die Anmeldedaten des Benutzers, um sich über
+HTTP Basic Auth bei der JSON-API der JIRA-Instanz zu authentifizieren. In beiden
+Fällen werden die Anmeldedaten nicht serverseitig vom MV-Tool gespeichert und
+das MV-Tool verwaltet keine serverseitigen Benutzersitzungen. Die
+Benutzersitzung wird nur clientseitig, d.h. im Browser des Benutzers verwaltet. 
 
 .. TODO: Auf eigener Seite die Sicherheit der Benutzerauthentifizierung erläutern und hier verlinken.
 
@@ -47,6 +41,20 @@ d.h. im Browser des Benutzers verwaltet.
     JIRA-Benutzerprofil generieren. Weitere Informationen finden Sie in der
     `JIRA Dokumentation
     <https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/>`_.
+
+JIRA
+====
+
+Wenn Sie JIRA-Tickets mit Maßnahmen im MV-Tool verknüpfen möchten, ist eine
+Verbindung zu JIRA erforderlich. Dazu benötigen Sie eine JIRA-Instanz mit
+aktivierter JSON-API, auf die das MV-Tool über HTTP/HTTPS zugreifen kann. Die
+JSON API ist in JIRA standardmäßig aktiviert.
+
+.. note::
+
+   Das MV-Tool wird mit JIRA Version 9 getestet. Das MV-Tool verwendet `jira-python
+   <https://jira.readthedocs.io/>`_ für den Zugriff auf JIRA. Eine
+   Kompatibilität mit früheren JIRA Versionen kann daher gegeben sein.
 
 Datenbank
 =========
